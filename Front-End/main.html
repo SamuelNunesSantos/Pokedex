@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokedex</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container mt-5">
+      <div class="pokedex card">
+        <div class="card-body text-center">
+          <div class="screen">
+            <img
+              src=""
+              alt="Pokemon Image"
+              id="pokemon-image"
+              class="img-fluid"
+            />
+            <h2 id="pokemon-name" class="mt-3"></h2>
+          </div>
+          <div class="buttons mt-4">
+            <button class="btn btn-primary mr-2" onclick="prevPokemon()">
+              Previous
+            </button>
+            <button class="btn btn-primary" onclick="nextPokemon()">
+              Next
+            </button>
+          </div>
+          <div class="description mt-4">
+            <p id="pokemon-description"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
